@@ -1,5 +1,11 @@
-function showDiv(){
-    $("div").animate({left: '250px'});
-    $("#div2").fadeIn("slow");
-    $("#div3").fadeIn(3000);
+function hideParagraph(){
+    $("h1").hide(); 
+    $("#hidePara").hide(); 
+    $("#showPara").show(); 
+}
+
+function showParagraph(){
+    $("h1").show();
+    $("#hidePara").show(); 
+    $("#showPara").hide();
 }
