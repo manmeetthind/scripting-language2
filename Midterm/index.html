@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <p id = "heading">Sign up Page</p>
+        <form>
+            <div class="form-group">
+                <label>First Name</label>
+                <input type="text" class="form-control" id="firstName">
+            </div>
+            <div class="form-group">
+                <label>Last Name</label>
+                <input type="text" class="form-control" id="lastName">
+            </div>
+            <div class="form-group">
+                <label> Blood group</label>
+                <select name="blood group" id="bloodGroup" form="bloodForm">
+                    <option value="A+">A postive</option>
+                    <option value="B+">B postive</option>
+                    <option value="O+">O positive</option>
+                    <option value="AB-">AB negative</option>
+                    </select>
+            </div>
+            <div class="form-group">
+                <label>Mobile number</label>
+                <input type="text" class="form-control" id="mobileNumber">
+            </div>
+            <div class="form-group">
+                <label>Student id number</label>
+                <input type="text" class="form-control" id="studentId">
+            </div><br>
+
+
+            <div class="form-group">
+                <label>Address</label>
+                <textarea id="address" name="address" rows="2" cols="50">
+                    </textarea>
+            </div><br><br>
+
+            <p>Do you have a car?</p>
+            <input type="radio" id="yes" name="yes" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="No" name="No" value="No">
+            <label for="No">No</label><br><br>
+            
+            
+            <div class="form-group">
+                <label> Age</label>
+                <input type="text" class="form-control" id="age">
+            </div>
+
+            <label> Gender </label>
+                <select name="Gender" id="gender" form="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                    
+            </select><br><br>
+            <label> Martial status </label>
+                <select name="Martial status" id="status" form="status">
+                <option value="Married">Married</option>
+                <option value="Single">Single</option>
+                    
+            </select><br><br>
+            
+            <button type="button" onclick="submitInfo()" class="btn btn-primary">Submit</button>
+        </form>
+    <br><br>
+        <div style="background:grey;height:absolute;width:absolute;position:absolute;"  >
+            <ul id="Output">
+                <li>First Name: </li>
+                <li>Last Name:  </li>
+                <li>Mobile Number: </li>
+                <li>Student Id:  </li>
+                <li>Age:</li>
+                <li>Gender: </li>
+                <li>martial Status: </li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

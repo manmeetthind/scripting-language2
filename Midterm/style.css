@@ -1,0 +1,25 @@
+#heading{
+    color: blue;
+    font-size: 50px;
+    text-align: center;
+}
+
+#firstName{
+    width:50%;
+}
+
+#lastName{
+    width:50%;
+}
+
+#mobileNumber{
+    width:50%;
+}
+
+#studentId{
+    width:50%;
+}
+
+#age{
+    width:50%;
+}
